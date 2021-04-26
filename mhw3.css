@@ -1,0 +1,283 @@
+body {
+    color: rgb(46, 91, 240);
+    font-family: 'Montserrat', serif;
+    font-size: 14px;
+    margin: 0;
+  } 
+  @media (max-width: 650px) {
+    body {
+      font-size: 8px;
+    }
+  }
+
+  nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+     height: 75px;    
+   background-color: white;  
+ }
+ @media(max-width:650px){
+     nav{
+         height: 40px;
+         padding-right:15px;
+     }
+ }
+
+ #menu div {
+     width: 25px;
+     height: 3px;
+     background-color: rgb(46, 91, 240);
+     margin: 5px 0;
+   }
+   #menu {
+     display: none;
+   }
+ @media (max-width: 650px) {
+     #links {
+       display: none;
+     }  
+     #menu {
+       display: block;
+     }
+   } 
+
+ #logo{ 
+         padding-left: 2px;
+        font-size: 1.5em;
+    height: 100%;   
+     display:flex;
+     justify-content: flex-start;
+     align-items:  center;
+ }
+ #logo img{
+     width: 60px;
+     margin-right: 2px;
+     height: 90%;
+ }
+ @media(max-width:650px){
+     #logo{
+         font-size:1em;
+     }
+     #logo img{
+         width: 30px;
+     }
+ }
+ 
+ #links a{    
+       font-size: 1.2em;
+     margin: 20px;
+    font-weight: bold;  
+   color: rgba(33, 105, 240, 0.932); 
+ }
+ 
+ a {
+     text-decoration: none;
+     cursor:pointer;
+   }
+ #links a:hover{
+ border-bottom:2px solid rgba(33, 105, 240, 0.932);
+ }
+
+header {
+    height: 550px;    
+    background-image: url('img_mhw3/img2.png');
+    background-size:100% 100%; 
+    background-position:center; 
+    position: relative; 
+}
+@media(max-width:650px){
+    header{
+        height: 200px;
+    }
+}
+
+#overlay{
+  position: absolute;
+width:100%;
+top:0;
+bottom:0;
+background-color: rgb(0,0,0,.3);
+text-align: center;
+}
+#overlay h1 {
+   font-size: 4em;
+   text-transform: uppercase;
+   font-weight: bold;
+   padding-top:50px;
+   color: white;    
+}
+@media(max-width:650px){
+   #overlay h1{
+       font-size: 2em;
+       padding-top:20px;
+   }
+}
+
+
+section {
+  text-align: center;
+ height: 100%;
+margin: 5vw;
+}
+@media (max-width: 650px) {
+  section {
+    margin: 40px 20px;
+  }
+}
+
+ #intro {
+width: 100%; 
+    background-color:rgb(3, 4, 77);   
+    height: 50%;
+padding-bottom: 40px;
+color:white;
+margin-bottom: 75px;
+}
+@media(max-width:650px){
+  #intro{
+      margin-bottom:50px;
+  }
+}
+#intro h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;   
+padding-top:40px;
+margin:0;
+}
+#intro a{
+  font-weight: bold;
+  font-size: 1.75em;
+  border:2px solid white;
+  border-radius: 20px;
+  padding:5px;
+  margin-bottom: 10px;
+}
+#intro a:hover{
+  background-color: white;
+  color: rgb(46, 91, 240);
+  
+}
+#intro p{
+       font-weight: bold;    
+font-size:1.5em;
+padding: 0 100px;
+}
+@media (max-width: 650px) {
+    #intro p{
+      padding: 0px 20px;
+    }
+  #intro h1{
+    padding-top:20px;
+      font-size: 2em;
+  }
+  }
+
+#cont{
+    display:flex;  
+    justify-content: space-between;
+    flex-wrap:wrap;
+    background-color: white;    
+}
+@media (max-width: 650px) {
+    #cont {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  #cont h1{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px;
+}
+#info, form{
+  text-align: center;
+}
+
+form {
+  margin-top:35px;
+}
+
+input{
+  width:200px;
+  font-size: 16px;
+}
+@media ( max-width:650px){
+  input{
+    
+    height: 16px;
+    width:140px;
+  }
+ 
+}
+form h1{
+  font-size: 2.3em;
+    font-weight: bold;
+}
+.item a{
+  padding:5px;
+  border:2px solid rgb(63, 61, 61) ;
+  border-radius:20px;
+  font-weight: bold;
+    color: black;
+    font-size:1.2em;
+}
+.item a:hover{
+  color:white;
+  background-color: rgb(63, 61, 61) ;
+}
+ .item img{
+width: 100%;
+    }
+#cont .item{  
+    width: 30%;    
+}
+@media (max-width: 650px){
+#cont .item {
+width: 100%;
+margin-top:20px;
+}
+.item img{
+  width: 80%
+}
+}
+.item p{    
+    font-weight: bold;
+    color: black;
+    font-size:1.5em;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#info h1{
+  
+  font-size:2em;
+  
+}
+#info img{
+  border:2px solid black;
+}
+#info p{
+  font-weight: bold;
+  font-size:1.4em;
+  color: black;
+}
+@media(max-width){
+  .item p{
+    padding-left:40px;
+    padding-right:40px;
+  }
+}
+
+footer{        
+background-color: rgb(48, 51, 53);
+padding:25px;
+text-align: center;
+}
+footer h2{
+  text-transform: uppercase;
+ 
+}
+footer p, footer h2{
+    color: white;
+    font-weight: bold;
+}
