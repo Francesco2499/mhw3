@@ -34,7 +34,7 @@ for(const c of cont){
     titolo.textContent= c.titolo;
     head.appendChild(titolo);    
     hl.classList.add('highlight');
-    hl.src='img_mhw2/img3.png';
+    hl.src='img3.png';
     hl.classList.add('cursor');
     hl.setAttribute('data-checked', 'false');
     head.appendChild(hl);
@@ -55,7 +55,7 @@ function createBoxEvidence(titolo, immagine, indice){
   const remove = document.createElement('img');
   title.textContent=titolo;
   img.src=immagine;
-  remove.src= 'img_mhw2/img8.png';
+  remove.src= 'img8.png';
   remove.classList.add('cursor');
   boxtitle.appendChild(title);
   boxtitle.appendChild(remove);
@@ -74,7 +74,7 @@ function putEvidence(event){
   const box= hl.parentNode.parentNode;
   const id = box.dataset.index;  
 if(hl.dataset.checked==='false'){
-    hl.src='img_mhw2/img4a.webp';  
+    hl.src='img4a.webp';  
     const evidenza = createBoxEvidence(cont[id].titolo, cont[id].image, id);
     const contenitore = evidenza.parentNode;
     contenitore.classList.remove('hidden');
@@ -98,7 +98,7 @@ function removeEvidence(event){
 for (const b of grid_box){
   if(b.dataset.index===box.dataset.id){    
     const immg = b.querySelector('.head img');
-    immg.src='img_mhw2/img3.png';
+    immg.src='img3.png';
     immg.classList.add('cursor');
     immg.addEventListener('click', putEvidence);
     inEvidenza.pop(box);      
